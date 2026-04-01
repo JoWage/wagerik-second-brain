@@ -1,0 +1,19 @@
+# Obsidian workspace settings (personal / machine-specific)
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# Community plugin data
+.obsidian/plugins/*/data.json
+
+# Trash folder
+.trash/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Temporary / backup files
+*.tmp
+*.bak

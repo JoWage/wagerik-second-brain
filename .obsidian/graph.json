@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "-path:Archive -path:_Templates -path:_Attachments -file:base -file:README",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#Project",
+      "color": {
+        "a": 1,
+        "rgb": 10181046
+      }
+    },
+    {
+      "query": "tag:#Area",
+      "color": {
+        "a": 1,
+        "rgb": 4886745
+      }
+    },
+    {
+      "query": "tag:#Resource",
+      "color": {
+        "a": 1,
+        "rgb": 15247416
+      }
+    },
+    {
+      "query": "tag:#Technique",
+      "color": {
+        "a": 1,
+        "rgb": 3979336
+      }
+    },
+    {
+      "query": "tag:#People",
+      "color": {
+        "a": 1,
+        "rgb": 1752220
+      }
+    },
+    {
+      "query": "tag:#Journal",
+      "color": {
+        "a": 1,
+        "rgb": 9807270
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 0.85,
+  "lineSizeMultiplier": 0.8,
+  "collapse-forces": false,
+  "centerStrength": 0.52,
+  "repelStrength": 8.5,
+  "linkStrength": 1,
+  "linkDistance": 150,
+  "scale": 3.825619138684189,
+  "close": true
+}
