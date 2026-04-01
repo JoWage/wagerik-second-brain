@@ -1,0 +1,70 @@
+filters:
+  or:
+    - file.inFolder("Areas")
+    - file.inFolder("Techniques")
+    - file.inFolder("Resources")
+formulas:
+  Type: if(tags.contains("Technique"), "Technique", if(tags.contains("Area"), "Area", if(tags.contains("Resource"), "Resource", "Other")))
+properties:
+  file.name:
+    displayName: Title
+  note.acronym:
+    displayName: Acronym
+  note.source:
+    displayName: Source
+  note.tags:
+    displayName: Tags
+  note.last updated:
+    displayName: Last Updated
+views:
+  - type: table
+    name: All
+    groupBy:
+      property: formula.Type
+      direction: ASC
+    order:
+      - file.name
+      - acronym
+      - formula.Type
+      - last updated
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: Areas
+    filters:
+      and:
+        - file.tags.contains("Area")
+    order:
+      - file.name
+      - acronym
+      - last updated
+      - tags
+    columnSize:
+      file.name: 420
+  - type: table
+    name: Resources
+    filters:
+      and:
+        - file.tags.contains("Resource")
+    order:
+      - file.name
+      - source
+      - last updated
+      - tags
+    columnSize:
+      file.name: 420
+  - type: table
+    name: Techniques
+    filters:
+      and:
+        - file.tags.contains("Technique")
+    order:
+      - file.name
+      - last updated
+      - tags
+    columnSize:
+      file.name: 420

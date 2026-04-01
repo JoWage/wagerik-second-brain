@@ -3,7 +3,6 @@ date:
 tags:
   - Journal
   - Daily
-  - Work
 ---
 
 ## 🌅 Start of Day

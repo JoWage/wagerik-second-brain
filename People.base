@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.inFolder("People")
+properties:
+  file.name:
+    displayName: Name
+  note.team:
+    displayName: Team
+  note.role:
+    displayName: Role
+  note.last updated:
+    displayName: Last Updated
+  note.tags:
+    displayName: Tags
+views:
+  - type: table
+    name: All People
+    order:
+      - file.name
+      - team
+      - role
+      - last updated
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: team
+        direction: DESC
+    columnSize:
+      file.name: 420

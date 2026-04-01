@@ -1,0 +1,94 @@
+filters:
+  and:
+    - file.inFolder("Journal")
+formulas:
+  Type: if(tags.contains("Monthly"), "Monthly", if(tags.contains("Weekly"), "Weekly", if(tags.contains("Daily"), "Daily", "Meeting")))
+properties:
+  file.name:
+    displayName: Title
+  note.date:
+    displayName: Date
+  note.date_from:
+    displayName: Date From
+  note.date_to:
+    displayName: Date To
+  note.tags:
+    displayName: Tags
+views:
+  - type: table
+    name: All
+    groupBy:
+      property: formula.Type
+      direction: ASC
+    order:
+      - file.name
+      - date
+      - date_from
+      - date_to
+      - formula.Type
+      - tags
+    sort:
+      - property: date
+        direction: DESC
+      - property: date_from
+        direction: DESC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: Meetings
+    filters:
+      and:
+        - file.tags.contains("Meeting")
+    order:
+      - file.name
+      - date
+      - tags
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: Daily
+    filters:
+      and:
+        - file.tags.contains("Daily")
+    order:
+      - file.name
+      - date
+      - tags
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: Weekly
+    filters:
+      and:
+        - file.tags.contains("Weekly")
+    order:
+      - file.name
+      - date_from
+      - date_to
+      - tags
+    sort:
+      - property: date_from
+        direction: DESC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: Monthly
+    filters:
+      and:
+        - file.tags.contains("Monthly")
+    order:
+      - file.name
+      - date_from
+      - date_to
+      - tags
+    sort:
+      - property: date_from
+        direction: DESC
+    columnSize:
+      file.name: 420

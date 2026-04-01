@@ -1,0 +1,31 @@
+filters:
+  and:
+    - file.inFolder("Projects")
+properties:
+  file.name:
+    displayName: Project
+  note.priority:
+    displayName: Priority
+  note.tags:
+    displayName: Tags
+  note.date_from:
+    displayName: Started
+  note.date_to:
+    displayName: Finished
+  note.last updated:
+    displayName: Last Updated
+views:
+  - type: table
+    name: All
+    order:
+      - file.name
+      - priority
+      - date_from
+      - date_to
+      - last updated
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 420

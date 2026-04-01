@@ -32,6 +32,14 @@ filters:
 properties:
   file.name:
     displayName: Title
+  note.date:
+    displayName: Date
+  note.date_from:
+    displayName: Date From
+  note.date_to:
+    displayName: Date To
+  note.tags:
+    displayName: Tags
 views:
   - type: table
     name: Journals
@@ -40,8 +48,15 @@ views:
         - file.hasLink(this.file)
     order:
       - file.name
-    sort: []
-    columnSize: {}
+      - date
+      - tags
+    sort:
+      - property: date
+        direction: DESC
+      - property: date_from
+        direction: DESC
+    columnSize:
+      file.name: 420
 
 ```
 

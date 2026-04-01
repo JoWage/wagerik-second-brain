@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("Techniques")
+properties:
+  file.name:
+    displayName: Title
+  note.tags:
+    displayName: Tags
+  note.last updated:
+    displayName: Last Updated
+views:
+  - type: table
+    name: All Techniques
+    order:
+      - file.name
+      - last updated
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 420

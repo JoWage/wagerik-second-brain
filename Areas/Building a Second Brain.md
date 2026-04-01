@@ -3,7 +3,7 @@ acronym:
 tags:
   - Area
   - Knowledge-Management
-last updated: 2026-04-01
+last updated: 2026-04-01T09:54:00
 ---
 
 ## Overview
@@ -65,6 +65,9 @@ views:
       - file.name
       - last updated
       - tags
+    sort:
+      - property: file.name
+        direction: ASC
     columnSize:
       file.name: 420
 
@@ -76,8 +79,6 @@ views:
 > This table auto-populates with any Resource that links back to this Area.
 
 ```base
-    columnSize:
-      file.name: 420
 filters:
   and:
     - file.inFolder("Resources")

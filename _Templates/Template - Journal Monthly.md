@@ -48,10 +48,12 @@ properties:
     displayName: Title
   note.date:
     displayName: Date
+  note.date_from:
+    displayName: Date From
+  note.date_to:
+    displayName: Date To
   note.tags:
     displayName: Tags
-  note.team:
-    displayName: Team
 views:
   - type: table
     name: Journals
@@ -61,10 +63,14 @@ views:
         - date <= this.date_to
     order:
       - file.name
-      - team
+      - date
       - tags
     sort:
       - property: date
         direction: DESC
-    columnSize: {}
+      - property: date_from
+        direction: DESC
+    columnSize:
+      file.name: 420
+
 ```

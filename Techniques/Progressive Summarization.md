@@ -1,6 +1,4 @@
 ---
-areas:
-  - "[[Building a Second Brain]]"
 tags:
   - Technique
   - Knowledge-Management

@@ -45,6 +45,9 @@ views:
       - file.name
       - last updated
       - tags
+    sort:
+      - property: file.name
+        direction: ASC
     columnSize:
       file.name: 420
 
