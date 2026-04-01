@@ -82,8 +82,12 @@ obsidian-ai-second-brain/
 │
 └── .github/
     └── skills/                        # Custom AI skills
-        └── vault-knowledge-retrieval/
-            └── SKILL.md               # Query the knowledge graph
+        ├── vault-knowledge-retrieval/ # Query the knowledge graph
+        │   └── SKILL.md               
+        ├── vault-note-creation/       # Create new notes in your Second Brain
+        │   └── SKILL.md               
+        └── vault-note-update/         # Updates existing/archived notes in your Second Brain
+            └── SKILL.md               
 ```
 
 ### Example Notes
