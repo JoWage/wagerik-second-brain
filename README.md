@@ -81,7 +81,9 @@ obsidian-ai-second-brain/
 ├── _Attachments/                      # Images and file attachments
 │
 └── .github/
-    └── skills/                        # Custom AI skills (coming soon)
+    └── skills/                        # Custom AI skills
+        └── vault-knowledge-retrieval/
+            └── SKILL.md               # Query the knowledge graph
 ```
 
 ### Example Notes
@@ -131,7 +133,7 @@ Supporting folders: `Journal/` (time-based capture), `People/` (relationships), 
 3. **Open as an Obsidian vault**: in Obsidian, choose "Open folder as vault" and select the cloned directory
 4. **Explore the example notes**: start with `Areas/Building a Second Brain.md` and follow the `[[wikilinks]]` to see how the graph connects
 5. **Create your first Area**: use `_Templates/Template - Area.md` as the template and write about a knowledge domain you care about
-6. **Try a skill** *(coming soon)*: once skills are added, ask Copilot "what do I know about {topic}?" to query your vault
+6. **Try a skill**: ask GitHub Copilot "what do I know about {topic}?" to invoke the `vault-knowledge-retrieval` skill and query your vault
 7. **Clean-up the example notes**: once you're comfortable with the patterns, remove the examples, if you'd like, and start building your own knowledge base
 
 ---
