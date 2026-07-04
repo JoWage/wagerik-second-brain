@@ -17,3 +17,6 @@ Thumbs.db
 # Temporary / backup files
 *.tmp
 *.bak
+
+# Plugin-Installationen (maschinenspezifisch)
+.obsidian/plugins/
