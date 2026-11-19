@@ -51,6 +51,7 @@ status: produktiv
 
 ## See Also
 
+- [[Areas/Webdesign]]
 - [[Techniques/Headless-CMS-mit-Sanity]] — technische Grundlagen (GROQ, Portable Text, CORS, Gotchas)
 - [[Projects/Cafe-Roller-Frankenbad]] — das Original, aus dem die Vorlagen generalisiert wurden
 - [[Projects/Wagerick-Studio]] — Studio-Workflow

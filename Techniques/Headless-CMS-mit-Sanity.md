@@ -274,6 +274,7 @@ Rechtfertigt +20–40 €/Monat Wartungspauschale.
 
 ## See Also
 
+- [[Areas/Webdesign]]
 - [[Projects/Cafe-Roller-Frankenbad]] — Referenz-Implementierung
 - [[Techniques/CMS-Scaffolding-Skill]] — automatisiertes Scaffolding für neue Kunden
 - [[Projects/Gartenservice Welte Marqua - Website]] — In-Place-Override-Variante

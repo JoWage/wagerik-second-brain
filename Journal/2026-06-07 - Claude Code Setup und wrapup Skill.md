@@ -46,4 +46,4 @@ Claude Code Setup optimieren — globale Konfiguration anlegen und Session-Absch
 
 ## Verknüpfte Notes
 
-- [[Projects/Build My Second Brain]]
+- [[Build My Second Brain]]
