@@ -20,11 +20,11 @@ last updated: 2026-04-01T09:54:00
 > [!tip] Measurable outcomes that define success
 > List 3-5 concrete, measurable results. Use checkboxes to track completion. Each should be independently verifiable.
 
-- [ ] PARA folder structure created with all supporting folders (Journal, People, Templates, Attachments)
-- [ ] Templates set up for each note type (Area, Technique, Resource, Project, Person, Meeting, Weekly, Monthly)
-- [ ] At least 10 Area notes created covering key knowledge domains
-- [ ] First journal completed using [[Progressive Summarization]] principles
-- [ ] At least 3 Techniques distilled from existing knowledge
+- [x] PARA folder structure created with all supporting folders (Journal, People, Templates, Attachments)
+- [x] Templates set up for each note type (Area, Technique, Resource, Project, Person, Meeting, Weekly, Monthly)
+- [ ] At least 10 Area notes created covering key knowledge domains (currently 2: Building a Second Brain, Webdesign)
+- [x] First journal completed using [[Progressive Summarization]] principles
+- [x] At least 3 Techniques distilled from existing knowledge (currently 4)
 
 ## Stakeholders
 

@@ -1,7 +1,6 @@
 ---
 type: technique
 tags: [cms, sanity, backend, client-features]
-related: "[[Projects/Cafe-Roller-Frankenbad]], [[Techniques/CMS-Scaffolding-Skill]], [[Projects/Gartenservice Welte Marqua - Website]]"
 created: 2026-06-08
 updated: 2026-06-17
 status: produktiv
@@ -272,6 +271,12 @@ kein `innerHTML`-Rebuild, kein `opacity:0`). Konsequenzen:
 Rechtfertigt +20–40 €/Monat Wartungspauschale.
 
 ---
+
+## See Also
+
+- [[Projects/Cafe-Roller-Frankenbad]] — Referenz-Implementierung
+- [[Techniques/CMS-Scaffolding-Skill]] — automatisiertes Scaffolding für neue Kunden
+- [[Projects/Gartenservice Welte Marqua - Website]] — In-Place-Override-Variante
 
 ## Ressourcen
 

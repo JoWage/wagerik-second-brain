@@ -6,7 +6,7 @@ tags:
   - Project
   - Wagerick
   - Business
-last updated: 2026-06-09
+last updated: 2026-07-06
 ---
 
 ## Objective
@@ -46,12 +46,24 @@ Wagerick Studio als funktionierendes Webdesign-Sidebusiness aufbauen — wiederk
 
 ## Aktive Projekte
 
-- [[Projects/Cafe-Roller-Frankenbad]] — Website in Entwicklung (Framer + Sanity CMS)
+- [[Projects/Cafe-Roller-Frankenbad]] — Website in Entwicklung (HTML/CSS/JS + Sanity CMS)
+- [[Projects/Piazza-Siciliana-da-Sebastiano]] — Akquise-Demo in Arbeit (Restaurant, Sankt Augustin-Hangelar)
 - [[Prysm - Elektro Preisvergleich]] — Eigenprodukt SaaS, Testkunde [[ELTESA - Thorsten Sawade]]
 
 ## Prozesse & Skills
 
 - **`/cms <kunde>`** — scaffoldet ein komplettes Sanity-CMS für neue Kunden (Premium-Paket) in einem Befehl → [[Techniques/CMS-Scaffolding-Skill]]. Macht das Premium-Paket schnell wiederholbar.
+
+## Zuletzt gemacht (2026-07-06)
+
+Mac-Umzug Status-Check: Backup-Stand geprüft (Claude-Config-ZIP + MCP-Liste vorhanden, SSH-Backup fehlt), alle 7 Git-Repos nur-lesend auf Push-Stand geprüft. Details → [[Journal/2026-07-06 - Mac-Umzug Status-Check]].
+
+**Offene Punkte:**
+- [ ] `leads.csv.xlsx` manuell aus iCloud-Trash retten
+- [ ] SSH-Key-Standort klären, `ssh-backup.zip` nachholen
+- [ ] `wagerik-second-brain`-Vault: uncommitted changes committen & pushen?
+- [ ] `git-repos-liste.txt` ist spurlos verschwunden — Ursache klären, ggf. neu erstellen
+- [ ] Auf Mac: Repos klonen, Azure-PAT für EuroSopePlugIn einrichten
 
 ## See Also
 

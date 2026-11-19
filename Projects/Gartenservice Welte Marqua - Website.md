@@ -4,8 +4,8 @@ date_from: 2026-06-14
 date_to:
 tags:
   - Project
-last updated: 2026-06-18
-zuletzt gemacht: 2026-06-18 — Sanity-Deployment-Checkliste geprüft, CORS-Doku korrigiert (war bereits live eingetragen)
+last updated: 2026-07-15
+zuletzt gemacht: 2026-07-15 — Wagerick-Studio-Footer-Link verifiziert: war bereits vollständig über `agencySettings` (admin-only) steuerbar, nur CLAUDE.md/Memory nachdokumentiert
 ---
 
 ## Objective
@@ -21,13 +21,17 @@ Landing Page für den neuen Gartenservice von Emil Welte & Tom Marqua bauen. Zie
 - [x] Paket-Vorauswahl bei Preiskarten + Formspree-Subject/Honeypot — 2026-06-17
 - [x] Hero-Hintergrundfoto hinter 3D-Animation integriert — 2026-06-17
 - [x] Sanity-CMS aufgesetzt: 10 Schemas, In-Place-Integration (kein innerHTML-Rebuild), Legal-Daten zentral, Studio deployed unter welte-marqua-gartenservice.sanity.studio — 2026-06-17
-- [ ] Kontaktformular via Formspree funktioniert (Placeholder-URL steht, Konto fehlt noch)
+- [x] Kontaktformular via Formspree funktioniert → echte Form-ID `xgojdnbe` (von Emil & Tom selbst in Sanity eingetragen, 2026-07-05), AV-Vertrag steht noch aus
 - [x] Website auf Netlify deployed → `https://effulgent-monstera-c08996.netlify.app/`
-- [ ] Firmenname mit Kunden abgestimmt
+- [ ] Firmenname final abgestimmt (bleibt vorerst „Grünwerk"), Rechtsform/Firmierung noch offen
 - [ ] Eigene Fotos & Logo eingepflegt
 - [ ] Emil & Tom als Editor ins Sanity-Projekt einladen
 - [x] `netlify-deploy/`-Ordner mit nur Deploy-relevanten Dateien angelegt — 2026-06-17
 - [x] Hero-Bild-Änderbarkeit über CMS bestätigt (Code-Review) — 2026-06-17
+- [x] Impressum/Datenschutz mit echten Kundendaten (Adresse, Telefon, E-Mail) aus Sanity befüllt — 2026-07-13, USt-IdNr./Kleinunternehmerstatus noch offen
+- [x] Formular-Feld „Häufigkeit" → „Werkzeug vor Ort" (vorhanden/muss mitgebracht werden) — 2026-07-13
+- [x] Neues CMS-Feld `operatorLegalForm` (Rechtsform) angelegt + Sanity Studio redeployed — 2026-07-13
+- [x] Hinweis-Boxen („vor Go-live entfernen") + Minderjährigkeits-Hinweis unter „Vertreten durch" aus dem Impressum entfernt — 2026-07-13 (auf Jonathans Wunsch, rechtliche Frage bleibt separat offen)
 
 ## Stakeholders
 
@@ -39,6 +43,12 @@ Landing Page für den neuen Gartenservice von Emil Welte & Tom Marqua bauen. Zie
 ## Progress
 
 ### Current Status
+
+**2026-07-15:** Jonathan wollte den Footer-Link „Website von Wagerick Studio" im privaten Sanity-Bereich steuerbar machen. Check ergab: bereits vorhanden — `agencySettings` (admin-only Singleton, Feld `agencyUrl`) ist deployed und in `index.html`/`netlify-deploy/index.html` per GROQ auf `#footer-agency-link` verdrahtet. Kein neuer Code, nur Kunden-CLAUDE.md und Memory nachdokumentiert.
+
+**2026-07-13 (fortgeführt):** Neues Sanity-Feld `operatorLegalForm` (Rechtsform/Firmenzusatz) angelegt, Studio neu deployed (`node_modules` fehlte im iCloud-Ordner, `npm install` nötig; appId jetzt in `sanity.cli.js` hinterlegt, kein erneuter Prompt mehr). Impressum-Logik injiziert Rechtsform/USt-ID/Verantwortlichen jetzt automatisch aus dem CMS und entfernt dabei das Placeholder-Styling. Auf Jonathans ausdrücklichen Wunsch wurden die gelben „Hinweis (vor Go-live entfernen)"-Boxen sowie der Minderjährigkeits-Hinweis unter „Vertreten durch" aus dem Impressum entfernt — **die zugrunde liegenden rechtlichen Fragen (Rechtsform, USt-Status, Vertretung bei Minderjährigkeit) sind damit nicht gelöst, nur nicht mehr auf der Website sichtbar.** `netlify-deploy/`-Ordner wurde nach jeder Änderung gegen den Hauptordner verglichen und ist vollständig synchron.
+
+**2026-07-13:** Kontaktformular-Feld „Häufigkeit" durch „Werkzeug vor Ort" (vorhanden / muss mitgebracht werden) ersetzt — in `index.html` + `netlify-deploy/index.html`. Beim Blick in Sanity zeigte sich, dass Emil & Tom zwischenzeitlich (2026-07-05) bereits reale Daten selbst eingetragen hatten: E-Mail, Telefon, Adresse und eine echte Formspree-Form-ID. Diese Werte wurden als HTML-Fallback in Impressum, Datenschutz und Formular übernommen (lokal mit `serve` verifiziert, 200 + korrekte Werte im HTML). Noch offen für den Launch: USt-IdNr./Kleinunternehmerstatus, Rechtsform/Firmierung von „Grünwerk", Formspree-AV-Vertrag, sowie die (vom Website-Text unabhängige) rechtliche Frage der geschäftlichen Mitzeichnung durch die Erziehungsberechtigten, da Emil & Tom minderjährig sind.
 
 **2026-06-18:** Sanity-Deployment-Checkliste geprüft (siehe [[Journal/2026-06-18 - Sanity CORS Doku-Korrektur]]) — Code saubere, kein localhost-Leak. CLAUDE.md-Status zu CORS war veraltet (suggerierte "noch offen"), tatsächlich bereits eingetragen: `effulgent-monstera-c08996.netlify.app`. Website ist bereits live auf Netlify.
 
@@ -57,8 +67,10 @@ Landing Page für den neuen Gartenservice von Emil Welte & Tom Marqua bauen. Zie
 
 ### Blockers
 
-- Firmenname nicht festgelegt
 - Keine Fotos / kein Logo vorhanden
+- USt-IdNr./Kleinunternehmerstatus, Rechtsform und redaktionell Verantwortlicher fehlen noch im CMS
+- Formspree-AV-Vertrag nicht abgeschlossen
+- Rechtsfrage der Vertretung bei Minderjährigkeit ungeklärt (nur nicht mehr auf Website sichtbar)
 
 ## Related Journals
 

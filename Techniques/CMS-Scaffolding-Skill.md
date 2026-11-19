@@ -1,7 +1,6 @@
 ---
 type: technique
 tags: [cms, sanity, skill, automation, client-features, scaffolding]
-related: "[[Techniques/Headless-CMS-mit-Sanity]], [[Projects/Cafe-Roller-Frankenbad]]"
 created: 2026-06-14
 updated: 2026-06-14
 status: produktiv
