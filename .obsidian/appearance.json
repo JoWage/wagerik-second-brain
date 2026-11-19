@@ -1,5 +1,6 @@
 {
   "cssTheme": "Things",
   "accentColor": "#000000",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "showRibbon": true
 }

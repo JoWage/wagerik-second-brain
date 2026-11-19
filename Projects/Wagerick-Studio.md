@@ -6,7 +6,7 @@ tags:
   - Project
   - Wagerick
   - Business
-last updated: 2026-07-06
+last updated: 2026-11-19
 ---
 
 ## Objective
@@ -50,20 +50,24 @@ Wagerick Studio als funktionierendes Webdesign-Sidebusiness aufbauen — wiederk
 - [[Projects/Piazza-Siciliana-da-Sebastiano]] — Akquise-Demo in Arbeit (Restaurant, Sankt Augustin-Hangelar)
 - [[Prysm - Elektro Preisvergleich]] — Eigenprodukt SaaS, Testkunde [[ELTESA - Thorsten Sawade]]
 
+## Repo-Landschaft (seit 2026-11-19, Git-first)
+
+Vier eigenständige private GitHub-Repos unter `C:\Users\sandr\dev\` — kein Cloud-Sync (OneDrive/iCloud) mehr als Arbeitsort. `wagerick-studio` (dieses Repo), `wagerik-second-brain`, `prysm`, `euroscope-gnd-plugin`. Details → `CLAUDE.md` im Repo-Root, Memory → [[project_git_first_migration]] (Memory-Ordner von `dev\wagerick-studio`).
+
 ## Prozesse & Skills
 
 - **`/cms <kunde>`** — scaffoldet ein komplettes Sanity-CMS für neue Kunden (Premium-Paket) in einem Befehl → [[Techniques/CMS-Scaffolding-Skill]]. Macht das Premium-Paket schnell wiederholbar.
+- **`/wrapup`** — Session-Abschluss: Journal-Eintrag + Projekt-Note-Update + Memory-Konsolidierung in einem Befehl.
 
-## Zuletzt gemacht (2026-07-06)
+## Zuletzt gemacht (2026-11-19)
 
-Mac-Umzug Status-Check: Backup-Stand geprüft (Claude-Config-ZIP + MCP-Liste vorhanden, SSH-Backup fehlt), alle 7 Git-Repos nur-lesend auf Push-Stand geprüft. Details → [[Journal/2026-07-06 - Mac-Umzug Status-Check]].
+Git-first-Migration abgeschlossen: vier Repos unter `dev/` angelegt, Inhalt aus OneDrive/iCloud zusammengeführt und verifiziert, beide Custom-Skills (`/cms`, `/wrapup`) migriert und korrigiert, Memory auf die vier neuen Projekt-Namespaces verteilt, Vault aufgeräumt (Template-Demos archiviert, `Areas/Webdesign` gefüllt). Details → [[Journal/2026-11-19 - Git-Migration und Vault-Aufräumen]].
 
 **Offene Punkte:**
-- [ ] `leads.csv.xlsx` manuell aus iCloud-Trash retten
-- [ ] SSH-Key-Standort klären, `ssh-backup.zip` nachholen
-- [ ] `wagerik-second-brain`-Vault: uncommitted changes committen & pushen?
-- [ ] `git-repos-liste.txt` ist spurlos verschwunden — Ursache klären, ggf. neu erstellen
-- [ ] Auf Mac: Repos klonen, Azure-PAT für EuroSopePlugIn einrichten
+- [ ] Auf Mac: alle vier Repos nach `~/dev/...` klonen
+- [ ] Zwei Dateigruppen aus `iCloudDrive\Wagerick-Business` nachkopieren (iCloud-Cloud-Timeout verhinderte Migration — eine Vorlagen-E-Mail, 6 Dateien im `eiscafe-giardino`-Archiv)
+- [ ] `iCloudDrive\Wagerick-Business` umbenennen/archivieren (Zugriff zum Migrationszeitpunkt verweigert)
+- [ ] Alten OneDrive-Projektordner nach Sessionende selbst archivieren
 
 ## See Also
 
